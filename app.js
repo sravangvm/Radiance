@@ -43,9 +43,9 @@ const uploadImageToS3 = (imageName, callback) => {
   });
 };
 
-app.post('/txt2img', async (req, res) => {
+app.post('/text2img', async (req, res) => {
   try {
-    const url = process.env.ML_CODEBASE_URL_text_img;
+    const url = process.env.ML_CODEBASE_URL_Txt2Img;
     const requestBody = req.body;
     const response = await axios.post(url, requestBody);
 
